@@ -45,9 +45,9 @@ Explicit split
 
 Implemented methods Split one-to-many and Explicit split.
 
+Example of Split one-to-many:
 ![image](https://user-images.githubusercontent.com/41432691/169665954-093490d3-4084-441b-80cd-1502615b92b4.png)
 ![image](https://user-images.githubusercontent.com/41432691/169665960-cbff2438-6d83-4dcb-9875-e25dac1f5d8a.png)
-Example of Split one-to-many
 
 
 ## Futher plans
