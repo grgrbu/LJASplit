@@ -59,3 +59,13 @@ Bankevich, A., Bzikadze, A.V., Kolmogorov, M. et al. Multiplex de Bruijn graphs 
 
 Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, Kulikov AS, Lesin VM, Nikolenko SI, Pham S, Prjibelski AD, Pyshkin AV, Sirotkin AV, Vyahhi N, Tesler G, Alekseyev MA, Pevzner PA. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. J Comput Biol. 2012 May;19(5):455-77. doi: 10.1089/cmb.2012.0021. Epub 2012 Apr 16. PMID: 22506599; PMCID: PMC3342519.
 
+## Launch instructions
+
+The project is launched with `main.py`, where .gfa and .als files — graph and reads, respectively should be specified.
+
+`graph.py`, `vertex.py`, `edge.py` contain descriptions of the main methods.
+
+`make_short.py` can be used for quick starts with incomplete sets of reads
+
+`analytics.py` contains several useful for getting insights about data and debagging functions that build statistics. For example, the distribution of degrees of vertices:
+![image](https://user-images.githubusercontent.com/41432691/169667226-47c29171-a588-4052-b7d8-d48adf89dd96.png)
