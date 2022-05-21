@@ -5,15 +5,15 @@ Split repeat resolution for long reads
 
 When assembling the genome, de Bruijn graphs are used. These graphs are built on the basis of reading the genome. However, some of the information from the original reads remains unused in the graph.
 
-Due to inaccuracies of readings and imperfections of genome collectors, unresolved repeats occur in the de Bruijn graph.
+Due to inaccuracies of readings and imperfections of genome assembler, unresolved repeats occur in the de Bruijn graph.
 
-Different assemblers try to resolve repetitions using additional information from the reads.
+Different assemblers try to resolve repeats using additional information from the reads.
 
 Widely used [_SPAdes genome assembler_]([url](https://github.com/ablab/spades/)) uses a method based on iterative expansion of paths in a graph supported by reads.
 
-Recently, another method for resolving repetitions **Multiplex de bruijn** graph in the [_LJA assembler_]([url](https://github.com/AntonBankevich/LJA)) has been proposed.
+Recently, another method for resolving repeats **Multiplex de bruijn** graph in the [_LJA assembler_]([url](https://github.com/AntonBankevich/LJA)) has been proposed.
 
-Previously, SPAdes used a different method of resolving repetitions, based on the idea of **splitting vertices** (split).
+Previously, SPAdes used a different method of resolving repeats, based on the idea of **splitting vertices** (split).
 
 Split was quite inconvenient to work with paired reads of illumina. However with long Hi-Fi reads this method seems even more powerful than Multiplex de bruijn graph.
 
@@ -35,13 +35,19 @@ Objectives
 ## Approaches
 Split one-to-many
 
-- If a vertex has one incoming edge and several outgoing edges, then it can be divided into several, — one copy for each outgoing edge
+- If a vertex has one incoming edge and several outgoing edges, then it can be splitted into several, — one copy for each outgoing edge
 
 Explicit split
 
-- If the reads passing through the incoming and outgoing edges from the vertex can be unambiguously divided, then a vertex should be splitted with a copy for each such path through the vertex.
+- If the reads passing through the incoming and outgoing edges from the vertex can be unambiguously splitted, then a vertex should be splitted with a copy for each such path through the vertex.
 
 ## Results
+
+Implemented methods Split one-to-many and Explicit split.
+
+![image](https://user-images.githubusercontent.com/41432691/169665954-093490d3-4084-441b-80cd-1502615b92b4.png)
+![image](https://user-images.githubusercontent.com/41432691/169665960-cbff2438-6d83-4dcb-9875-e25dac1f5d8a.png)
+Example of Split one-to-many
 
 
 ## Futher plans
