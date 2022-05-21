@@ -41,7 +41,7 @@ Explicit split
 
 - If the reads passing through the incoming and outgoing edges from the vertex can be unambiguously splitted, then a vertex should be splitted with a copy for each such path through the vertex.
 
-## Results
+## Results and futher plans
 
 Implemented methods Split one-to-many and Explicit split.
 
@@ -50,8 +50,6 @@ Example of Split one-to-many:
 ![image](https://user-images.githubusercontent.com/41432691/169665954-093490d3-4084-441b-80cd-1502615b92b4.png)
 ![image](https://user-images.githubusercontent.com/41432691/169665960-cbff2438-6d83-4dcb-9875-e25dac1f5d8a.png)
 
-
-## Futher plans
 Further development of the work may be the implementation of more advanced methods of vertex separation. After that, it will be possible to compare the results obtained with the Multiplex de bruijn graph method. If the results, as expected, turn out to be better, then this module can be rewritten from Python to C++ and implemented in LJA assembler.
 
 ## Literature
