@@ -3,6 +3,7 @@ Split repeat resolution for long reads
 
 ## Objectives and purpose
 Purpose
+
 Implement the "Split" repeat resolution method and compare it with Multiplex de bruijn graph
 
 
