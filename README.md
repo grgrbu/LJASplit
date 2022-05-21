@@ -68,4 +68,5 @@ The project is launched with `main.py`, where .gfa and .als files — graph and 
 `make_short.py` can be used for quick starts with incomplete sets of reads
 
 `analytics.py` contains several useful for getting insights about data and debagging functions that build statistics. For example, the distribution of degrees of vertices:
+
 ![image](https://user-images.githubusercontent.com/41432691/169667226-47c29171-a588-4052-b7d8-d48adf89dd96.png)
