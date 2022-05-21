@@ -29,7 +29,8 @@ def make_analisys():
     plot_degrees_of_vertexes(graph.vertexes)
     plot_coverage(graph.edges)
 
-
+# to see analytics step-by-step: 
+# 
 # print("Total vertexes:", len(vertexes.keys()))
 # print("Total edges:", len(edges.keys()))
 #
