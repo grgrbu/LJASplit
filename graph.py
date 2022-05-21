@@ -1,3 +1,6 @@
+# a significant part of the code in this file is taken from
+# https://github.com/AntonBankevich/LJA/blob/trio_wip2/src/projects/scripts/trio/extract_unbranching_paths.py
+
 from vertex import Vertex
 from edge import Edge
 from Bio.Seq import Seq
@@ -54,9 +57,9 @@ class Graph:
                 labels[self.edges[e].get_rc_id()] = dirty_label
                 canonic[self.edges[e].get_rc_id()] = False
         for vid in self.vertexes.keys():
-            # if self.vertexes[vid].rc_id < vid:
-            #     print(self.vertexes[vid].id)
-            #     continue
+            if self.vertexes[vid].rc_id < vid:
+                print(self.vertexes[vid].id)
+                continue
             for eid in self.vertexes[vid].in_vertexes:
                 inc_label = "+"
                 if canonic[eid] == False:
@@ -195,6 +198,7 @@ def construct_graph(edge_component, segments, links):
 
 
 def change_e_id(e_id):
+    # to turn id into number
     dict_ch = dict()
     dict_ch["A"] = "04"
     dict_ch["C"] = "00"
