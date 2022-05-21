@@ -20,12 +20,12 @@ Split was quite inconvenient to work with paired reads of illumina. However with
 
 
 ## Objectives and purpose
-Purpose
+**Purpose**
 
 Implement the "Split" repeat resolution method and compare it with Multiplex de bruijn graph
 
 
-Objectives
+**Objectives**
 
 - Learn different different methods for repeat resolution
 - Analyze LJA code
@@ -57,7 +57,7 @@ Further development of the work may be the implementation of more advanced metho
 ## Literature
 Bankevich, A., Bzikadze, A.V., Kolmogorov, M. et al. Multiplex de Bruijn graphs enable genome assembly from long, high-fidelity reads. Nat Biotechnol (2022).
 
-Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, Kulikov AS, Lesin VM, Nikolenko SI, Pham S, Prjibelski AD, Pyshkin AV, Sirotkin AV, Vyahhi N, Tesler G, Alekseyev MA, Pevzner PA. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. J Comput Biol. 2012 May;19(5):455-77. doi: 10.1089/cmb.2012.0021. Epub 2012 Apr 16. PMID: 22506599; PMCID: PMC3342519.
+Bankevich A, Nurk S, Antipov D, Gurevich AA, Dvorkin M, Kulikov AS, Lesin VM, Nikolenko SI, Pham S, Prjibelski AD, Pyshkin AV, Sirotkin AV, Vyahhi N, Tesler G, Alekseyev MA, Pevzner PA. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. J Comput Biol. 2012 May;19(5):455-77.
 
 ## Launch instructions
 
