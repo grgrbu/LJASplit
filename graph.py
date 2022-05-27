@@ -57,9 +57,9 @@ class Graph:
                 labels[self.edges[e].get_rc_id()] = dirty_label
                 canonic[self.edges[e].get_rc_id()] = False
         for vid in self.vertexes.keys():
-            if self.vertexes[vid].rc_id < vid:
-                print(self.vertexes[vid].id)
-                continue
+            #if self.vertexes[vid].rc_id < vid:
+            #    print(self.vertexes[vid].id)
+            #    continue
             for eid in self.vertexes[vid].in_vertexes:
                 inc_label = "+"
                 if canonic[eid] == False:
